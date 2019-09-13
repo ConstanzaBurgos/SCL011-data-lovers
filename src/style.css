@@ -19,8 +19,67 @@ body {
    
     }
    
-    button {
-      display:block; /* para centrar imagen */
-      margin:auto;
-   
-    }
+    .chip{  
+      background-color: #FAFFF9;
+      color: #4F6D67;
+      text-align: center;
+      border: 1px solid;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      /*Sombras de las tarjetas   */
+      -webkit-box-shadow: 10px 10px 25px 0px rgba(51,51,51,1);
+      -moz-box-shadow: 10px 10px 25px 0px rgba(51,51,51,1);
+      box-shadow: 10px 10px 25px 0px rgba(51,51,51,1);
+  
+  }
+  
+  
+  
+  .container{
+  
+  
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: #05C877;
+      
+  }
+
+
+  #listType{
+
+   display: flex;
+   justify-content: center;
+
+}
+
+/* Float four columns side by side */
+.column {
+   float: left;
+   width: 20%;
+   padding: 0 10px;
+ }
+ 
+ 
+ p{
+
+text-align: center;
+color:#fbff00;
+
+ }
+  
+#filterType {
+
+box-align: center; display: block;
+width: 200px;
+height: 60px;
+padding: 0px 0 0 0;
+margin: 0 auto;
+background: rgb(10, 196, 41);
+font-size: 24px ;
+text-align: center;
+color: black;
+font-weight:bold;
+
+}

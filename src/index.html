@@ -7,25 +7,49 @@
     <link rel="icon" href="https://66.media.tumblr.com/b9b877ecabf94da77e9dcb3fcdcfe1c9/tumblr_px16ur7a4X1yu9kbco1_1280.pnj">
   </head>
   <body>
-    <div id="root">
+    <header>
+        
 
-   <img id class="loGo" src="https://66.media.tumblr.com/cde29e32ab3cb949aa9ced56594121d5/tumblr_px9sz5OMQ31yu9kbco1_1280.png">
-   
-   <br>
- 
+            <img id class="loGo" src="https://66.media.tumblr.com/cde29e32ab3cb949aa9ced56594121d5/tumblr_px9sz5OMQ31yu9kbco1_1280.png">
+          
+          </header>
+    
    <img id class="morTy1" src="https://66.media.tumblr.com/7a6fe4a4905d56f5eb66dca2c2e5093c/tumblr_px9rpxjtUa1yu9kbco1_1280.jpg">
 
-   <P>Rick Sanchez un científico loco de alrededor de 70 años cuya profesión o pasatiempo es ir de aventuras
-     con su nieto Morty Smith, llendo a muchas dimensiones desconocidas </P>
-
-     <button type="button" id="genDer">Genero</button> 
-     <button type="button" id="liveOrDead">Vivo o muerto</button> 
-     <button type="button" id="daTos">Datos Curiosos</button> 
+   <p>Rick Sanchez es un científico loco de alrededor de 70 años, cuya profesión o pasatiempo es ir de aventuras
+     con su nieto Morty Smith, llendo a muchas dimensiones desconocidas </p>
 
     </div>
 
-    <script src="./data/rickandmorty/rickandmorty.js"></script>
+      <nav>
+ 
+     <select id= "filterType">
 
+      <option value="personajes"   label="Tipo">Personajes</option>
+      <option value="Alive"   label="vivos">Vivos</option>
+      <option value="Dead"   label="muertos">Muertos</option>
+      <option value="Male"   label="masculinos">Masculinos</option>
+      <option value="Female"   label="femeninos">Femeninos</option>
+      <option value="Humans"   label="humanos">Humanos</option>
+      <option value="Indefinido"   label="indefinido">Queers</option>
+
+     </select>
+     <section>
+          <div class="container">
+            <div class="file">
+                  <div id="root1"></div>            
+            </div>
+            
+          </div>
+          
+        </section>
+    
+        <!--Div que contendrá los personajes-->
+        <div class="listFiles" id="root2"></div>
+          
+        
+      </section>
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
 

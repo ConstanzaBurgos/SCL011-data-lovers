@@ -9376,4 +9376,3 @@ const RICKANDMORTY = {
   }]
 }
 
-window.RICKANDMORTY = RICKANDMORTY;
