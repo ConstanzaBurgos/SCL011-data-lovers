@@ -1,23 +1,52 @@
-const rymList = window.RICKANDMORTY;
+const dataR = RICKANDMORTY.results;
 
+function filterStatus(dataR, selectValue) {
 
- //Filtrar por Tipo
-//Recibe dos parámetos: 1.La lista de personajes rym y 2. El 'type' escogido
-const filterTypes = (rymList, selectedType) => {
-    //.filter() crea un nuevo array compuesto por los elementos que cumplen
-    //el criterio de búsqueda, en este caso crearía un arreglo de todos los personajes
-    //que cumplan con el 'type' seleccionado.
-    //trabajamos con 'Element' a modo genérico, en este caso el elemento será la variable
-    //donde se encuentra la lista de butiizada  en el main.js
-    const resultType = rymList.filter(Element => {
-      //retornará todo elemento donde se encuentre dentro de su array de tipo 'type' según
-      //sea el value seleccionado en el selectBox (html estático)
-        return Element.type.includes(selectedType);
-    });
-    //retorna el valor de la función filtrar
-    return resultType;
-  
-  }
+const filtrados = dataR.filter(Element => {
 
-  
+    return Element.status === selectValue;
 
+})
+
+return filtrados;
+
+}
+
+window.filterStatus=filterStatus;
+
+function filterGender(dataR,selectValue)    {
+
+    const genero = dataR.filter(Element =>  {   
+
+    return Element.gender === selectValue;    
+    })
+  return genero;
+}
+window.filterGender=filterGender;
+
+function filterSpecies(dataR,selectValue)    {
+
+    const especie = dataR.filter(Element => {
+    
+        return Element.species === selectValue;
+    })
+    return especie;
+}
+window.filterSpecies=filterSpecies;
+
+function orderSort (dataR,selectValue)   {
+
+      let orderSelector="";
+
+    if (selectValue === "Ascendent") {
+        orderSelector = dataR.sort((a, b) => {
+          return a.name.localeCompare(b.name);
+        })
+      }
+      else {
+        orderSelector = dataR.sort((a, b) => {
+          return b.name.localeCompare(a.name);
+        })
+      } return orderSelector;
+
+} window.orderSort=orderSort;

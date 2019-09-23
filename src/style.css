@@ -1,8 +1,15 @@
+*  {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;   
+
+}
+
+
 body {
    background: url('https://i.cdn.turner.com/adultswim/big/img/2018/11/29/18-RAM_Landing%20Page%20Update.png');
     }
    
-    .loGo {
+    .logo {
        width: 650px; 
        height: 300px;
        align-content: center;
@@ -10,7 +17,7 @@ body {
        margin:auto;     
     }
    
-    .morTy1 {
+    .morty1 {
        width: 600px; 
        height: 600px;
        align-content: center;
@@ -47,26 +54,15 @@ body {
   }
 
 
-  #listType{
+  
 
-   display: flex;
-   justify-content: center;
 
-}
-
-/* Float four columns side by side */
-.column {
-   float: left;
-   width: 20%;
-   padding: 0 10px;
- }
  
- 
- p{
+ #infoText{
 
 text-align: center;
 color:#fbff00;
-
+flex:center;
  }
   
 #filterType {
@@ -83,3 +79,23 @@ color: black;
 font-weight:bold;
 
 }
+
+#containerAlphabet{
+
+   box-align: center; display: block;
+   width: 200px;
+   height: 60px;
+   padding: 0px 0 0 0;
+   margin: 0 auto;
+   background: rgb(10, 196, 41);
+   font-size: 24px ;
+   text-align: center;
+   color: black;
+   font-weight:bold;
+   
+   }
+  .tarjeta  {
+
+  background: white; 
+  }
+

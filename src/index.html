@@ -2,20 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width",initial-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="https://66.media.tumblr.com/b9b877ecabf94da77e9dcb3fcdcfe1c9/tumblr_px16ur7a4X1yu9kbco1_1280.pnj">
+    <link rel="icon" href="https://cdn.dribbble.com/users/458522/screenshots/3523236/rick_and_morty_d.jpg">
   </head>
   <body>
     <header>
         
 
-            <img id class="loGo" src="https://66.media.tumblr.com/cde29e32ab3cb949aa9ced56594121d5/tumblr_px9sz5OMQ31yu9kbco1_1280.png">
+            <img id class="logo" src="https://66.media.tumblr.com/cde29e32ab3cb949aa9ced56594121d5/tumblr_px9sz5OMQ31yu9kbco1_1280.png">
           
           </header>
     
-   <img id class="morTy1" src="https://66.media.tumblr.com/7a6fe4a4905d56f5eb66dca2c2e5093c/tumblr_px9rpxjtUa1yu9kbco1_1280.jpg">
-
+   <img id class="morty1" src="https://66.media.tumblr.com/7a6fe4a4905d56f5eb66dca2c2e5093c/tumblr_px9rpxjtUa1yu9kbco1_1280.jpg">
+    <div id="infoText">
    <p>Rick Sanchez es un científico loco de alrededor de 70 años, cuya profesión o pasatiempo es ir de aventuras
      con su nieto Morty Smith, llendo a muchas dimensiones desconocidas </p>
 
@@ -24,34 +25,40 @@
       <nav>
  
      <select id= "filterType">
-
-      <option value="personajes"   label="Tipo">Personajes</option>
+      <option value=""   label="Filtro">Selecciona</option>
+      <option value="Characters"   label="Tipo">Personajes</option>
       <option value="Alive"   label="vivos">Vivos</option>
       <option value="Dead"   label="muertos">Muertos</option>
       <option value="Male"   label="masculinos">Masculinos</option>
       <option value="Female"   label="femeninos">Femeninos</option>
-      <option value="Humans"   label="humanos">Humanos</option>
-      <option value="Indefinido"   label="indefinido">Queers</option>
+      <option value="Human"   label="humanos">Humanos</option>
+      <option value="Alien"   label="indefinido">Queers</option>
 
-     </select>
-     <section>
-          <div class="container">
-            <div class="file">
-                  <div id="root1"></div>            
-            </div>
-            
-          </div>
-          
-        </section>
-    
-        <!--Div que contendrá los personajes-->
-        <div class="listFiles" id="root2"></div>
-          
+     </select >
+     <nav>
+     
+          <select id="containerAlphabet">
+            <option value="Order"   label="orden">Ordenar</option>
+            <option value="Ascendent"   label="ascendente">A-Z</option>
+            <option value="Descendent"   label="descendente">Z-A</option>
+        </select>
+     
+    </nav>
+        
+  
+        
         
       </section>
+  
+    <div id="list">
+  
+    </div> 
     <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
 
   </body>
+  <footer>
+
+  </footer>
 </html>
