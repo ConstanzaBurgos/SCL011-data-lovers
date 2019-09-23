@@ -346,11 +346,52 @@ else if ( selectValue === "Dead")  {
 
 const showSort= document.getElementById("containerAlphabet");
           showSort.addEventListener("change", () =>  {
-          
+            document.getElementById("list").innerHTML="";
+            let result= window.orderSort=orderSort;
             let selectValue= showSort.value;
             
-            //let ordenados
-              
+            result = window.orderSort(data, selectValue) 
+            for(let i=0; i<result.length;i++) {
+
+            let allCharacters = document.createElement("div");
+      
+              allCharacters.id = "allCharacters";
+              allCharacters.className="tarjeta";
             
+            let characterName = document.createElement("h4");
+             
+              characterName.textContent = result[i].name;
+            
+  
+            let characterPhoto = document.createElement("img");
+         
+            characterPhoto.src = result[i].img;
+            
+      
+            let characterGender = document.createElement("h3");
+            characterGender.textContent = result[i].gender;
+      
+            let characterSpecies = document.createElement("h3");
+          
+            characterSpecies.textContent = result[i].species;
+            
+            let characterStatus = document.createElement("h5");
+        
+            characterStatus.textContent = result[i].status;
+            
+              allCharacters.appendChild(characterName);
+              allCharacters.appendChild(characterPhoto);
+              allCharacters.appendChild(characterGender);
+              allCharacters.appendChild(characterSpecies);
+              allCharacters.appendChild(characterStatus);
+              document.getElementById("list").appendChild(allCharacters).innerHTML;
+              }
+          
+          
+        
+            
+            });
            
-          })
+          
+
+            
